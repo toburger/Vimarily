@@ -29,15 +29,15 @@ If applicable, add screenshots to help explain your problem.
 
 MACOS=$(sw_vers | grep "ProductVersion" | cut -f 2)
 SAFARI=$(mdls -raw -name kMDItemVersion /Applications/Safari.app)
-VIMARI=$(mdls -raw -name kMDItemVersion /Applications/Vimari.app)
+Vimarily=$(mdls -raw -name kMDItemVersion /Applications/Vimarily.app)
 
-printf -- "- macOS version: %s\n- Safari version: %s\n- Vimari version: %s\n" "$MACOS" "$SAFARI" "$VIMARI"
+printf -- "- macOS version: %s\n- Safari version: %s\n- Vimarily version: %s\n" "$MACOS" "$SAFARI" "$VIMARILY"
 
 -->
 
  - macOS version: 
  - Safari version: 
- - Vimari version: 
+ - Vimarily version: 
 
 **Additional context**
 Add any other context about the problem here.

@@ -1,8 +1,8 @@
 module.exports = {
-  setupFiles: [
-    "./Vimari Extension/js/mocks.js",
-    "./Vimari Extension/json/defaultSettings.json",
-    "./Vimari Extension/js/lib/mousetrap.js",
-    "./Vimari Extension/js/injected.js"
-  ]
+	setupFiles: [
+		'./Vimarily Extension/js/mocks.js',
+		'./Vimarily Extension/json/defaultSettings.json',
+		'./Vimarily Extension/js/lib/mousetrap.js',
+		'./Vimarily Extension/js/injected.js',
+	],
 };

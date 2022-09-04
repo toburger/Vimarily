@@ -1,15 +1,18 @@
 var safari = {
-    self: {
-        tab: {
-            dispatchMessage: function () {},
-        },
-        addEventListener: function () {},
-    }
+	self: {
+		tab: {
+			dispatchMessage: function () {
+			},
+		},
+		addEventListener: function () {
+		},
+	}
 };
 window.safari = safari;
 
 global.SafariExtensionCommunicator = function () {
-  return {
-    requestSettingsUpdate: function () {},
-  };
+	return {
+		requestSettingsUpdate: function () {
+		},
+	};
 };

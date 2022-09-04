@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3306CAA21AF06A71019E12CE /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */; };
+		3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C4D7D7B218764A4434CE /* Constants.swift */; };
+		3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3306C2213248BF1931B37CF8 /* Credits.rtf */; };
+		3306CE3E6C8C8EF28E5A61FB /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */; };
+		490CA56C28C4DAE700CDEE6B /* Vimarily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490CA56B28C4DAE700CDEE6B /* Vimarily.swift */; };
 		659033F124E2B77400432D0E /* svim-scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = 659033F024E2B77400432D0E /* svim-scripts.js */; };
 		65E444F324CC3A1B008EA1DC /* SafariExtensionCommunicator.js in Resources */ = {isa = PBXBuildFile; fileRef = 65E444F224CC3A1B008EA1DC /* SafariExtensionCommunicator.js */; };
 		B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */; };
 		B1FD3B9923A588DE00677A52 /* defaultSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B1FD3B9823A588DE00677A52 /* defaultSettings.json */; };
-		E320D0662337FC9800F2C3A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E320D0652337FC9800F2C3A4 /* Credits.rtf */; };
-		E380F24C2331806400640547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380F24B2331806400640547 /* AppDelegate.swift */; };
-		E380F24F2331806400640547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E380F24D2331806400640547 /* Main.storyboard */; };
-		E380F2512331806400640547 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380F2502331806400640547 /* ViewController.swift */; };
 		E380F2532331806500640547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E380F2522331806500640547 /* Assets.xcassets */; };
 		E380F25A2331806500640547 /* Vimarily Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E380F2592331806500640547 /* Vimarily Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E380F25F2331806500640547 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E380F25E2331806500640547 /* Cocoa.framework */; };
@@ -56,16 +57,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		3306C2213248BF1931B37CF8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		3306C4D7D7B218764A4434CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
+		490CA56B28C4DAE700CDEE6B /* Vimarily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vimarily.swift; sourceTree = "<group>"; };
 		659033F024E2B77400432D0E /* svim-scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
 		65E444F224CC3A1B008EA1DC /* SafariExtensionCommunicator.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = SafariExtensionCommunicator.js; sourceTree = "<group>"; };
 		B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		B1FD3B9823A588DE00677A52 /* defaultSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultSettings.json; sourceTree = "<group>"; };
-		E320D0652337FC9800F2C3A4 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E380F2462331806400640547 /* Vimarily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimarily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E380F2492331806400640547 /* Vimarily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vimarily.entitlements; sourceTree = "<group>"; };
-		E380F24B2331806400640547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E380F24E2331806400640547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E380F2502331806400640547 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E380F2522331806500640547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E380F2542331806500640547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E380F2592331806500640547 /* Vimarily Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vimarily Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3306C09BD1720F627F8880A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3306C2213248BF1931B37CF8 /* Credits.rtf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3306C7288DC8206F459E7495 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3306C793C11AAC3FB15DD6E8 /* ConfigView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3306C793C11AAC3FB15DD6E8 /* ConfigView */ = {
+			isa = PBXGroup;
+			children = (
+				3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */,
+				3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */,
+			);
+			path = ConfigView;
+			sourceTree = "<group>";
+		};
 		B1FD3B9723A588DE00677A52 /* json */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				E380F2492331806400640547 /* Vimarily.entitlements */,
-				E380F24B2331806400640547 /* AppDelegate.swift */,
-				E320D0652337FC9800F2C3A4 /* Credits.rtf */,
-				E380F24D2331806400640547 /* Main.storyboard */,
-				E380F2502331806400640547 /* ViewController.swift */,
 				E380F2522331806500640547 /* Assets.xcassets */,
 				E380F2542331806500640547 /* Info.plist */,
+				490CA56B28C4DAE700CDEE6B /* Vimarily.swift */,
+				3306C7288DC8206F459E7495 /* Views */,
+				3306C4D7D7B218764A4434CE /* Constants.swift */,
+				3306C09BD1720F627F8880A8 /* Resources */,
 			);
 			path = Vimarily;
 			sourceTree = "<group>";
@@ -284,8 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E380F2532331806500640547 /* Assets.xcassets in Resources */,
-				E380F24F2331806400640547 /* Main.storyboard in Resources */,
-				E320D0662337FC9800F2C3A4 /* Credits.rtf in Resources */,
+				3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E380F2512331806400640547 /* ViewController.swift in Sources */,
-				E380F24C2331806400640547 /* AppDelegate.swift in Sources */,
+				490CA56C28C4DAE700CDEE6B /* Vimarily.swift in Sources */,
+				3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */,
+				3306CAA21AF06A71019E12CE /* ConfigView.swift in Sources */,
+				3306CE3E6C8C8EF28E5A61FB /* ConfigViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E380F24D2331806400640547 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E380F24E2331806400640547 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E380F2652331806500640547 /* SafariExtensionViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -420,6 +440,8 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "";
+				VERSION_INFO_SUFFIX = "-debug";
 			};
 			name = Debug;
 		};
@@ -469,13 +491,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};

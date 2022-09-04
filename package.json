@@ -1,10 +1,10 @@
 {
-  "name": "Vimarily",
-  "author": "Marc Donald",
-  "license": "MIT",
-  "homepage": "https://github.com/marcdonald/vimarily",
-  "devDependencies": {
-    "expect.js": "^0.3.1",
-    "jest": "^24.9.0"
-  }
+	"name": "Vimarily",
+	"author": "Marc Donald",
+	"license": "MIT",
+	"homepage": "https://github.com/marcdonald/vimarily",
+	"devDependencies": {
+		"expect.js": "^0.3.1",
+		"jest": "^24.9.0"
+	}
 }

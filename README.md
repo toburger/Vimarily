@@ -1,14 +1,16 @@
 <img align="left" width=160 style="padding: 10px" src="assets/logo.svg"></img>
 
 ## Vimarily
+
 _Keyboard Shortcuts extension for Safari_
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/marcdonald/vimarily)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/marcdonald/vimarily?include_prereleases&label=pre%20release)
 
-Vimarily is a Safari extension that provides vim style keyboard based navigation.
+Vimarily (pronounced like 'primarily') is a Safari extension that provides vim style keyboard based navigation.
 This lets you control Safari from your keyboard instead of having to use your mouse to open links, scroll, etc.
-This is a fork of [Vimari](https://github.com/televator-apps/vimari) which is heavily based on [vimium](https://github.com/philc/vimium), a
+This is a fork of [Vimari](https://github.com/televator-apps/vimari) which is heavily based
+on [vimium](https://github.com/philc/vimium), a
 Chrome extension that provides much more extensive features.
 
 <img src="assets/screenshot.png"></img>
@@ -27,7 +29,8 @@ Chrome extension that provides much more extensive features.
 4. Launch Vimarily.app
 5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open
 6. Make sure that the checkbox for the Vimarily extension is ticked
-7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is ready.
+7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is
+	 ready.
 8. You may need to relaunch Safari for the extension to work
 
 ## Usage
@@ -51,7 +54,7 @@ for HTML elements having cursor style set to "pointer".
 
 **Smooth Scroll** - Scroll smoothly through the page.
 
- **Normal vs Insert mode** - Isolate website keybindings from the
+**Normal vs Insert mode** - Isolate website keybindings from the
 Vimarily keybindings. In normal mode you can use the Vimarily keybindings
 while in insert mode you can use the websites own keybindings.
 
@@ -61,17 +64,21 @@ allows you to use all **non-Vimarily-bound** keys to interact with the web
 page as if you were in insert mode.
 
 **Multiple Bindings** - You can bind multiple keybindings to a Vimarily
-action. This is done by specifying an array of bindings in the 
+action. This is done by specifying an array of bindings in the
 configuration file, like so: `"goToPageTop": ["g g", "shift+k"]`.
-
 
 ### Tips & Tricks
 
-Vimarily is built as a Safari Extension, this poses some limits on what is possible through the extension. However default Safari shortcuts can help you keep your hands at the keyboard. Some helpful ones are listed here:
+Vimarily is built as a Safari Extension, this poses some limits on what is possible through the extension. However
+default Safari shortcuts can help you keep your hands at the keyboard. Some helpful ones are listed here:
 
-- **Focus URL Bar** <kbd>⌘</kbd><kbd>l</kbd> - This is a feature not available in Vimarily, it is also helpful where extensions are not loaded (for example on `topsites://`). By focusing the URL Bar you can go to a website where the extension is loaded.
+- **Focus URL Bar** <kbd>⌘</kbd><kbd>l</kbd> - This is a feature not available in Vimarily, it is also helpful where
+	extensions are not loaded (for example on `topsites://`). By focusing the URL Bar you can go to a website where the
+	extension is loaded.
 
-- **Reader mode** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>R</kbd> - Currently Vimarily does not support entering Reader mode (due to API limitations), also navigation inside reader mode (for example using <kbd>j</kbd> or <kbd>k</kbd>) is not supported.
+- **Reader mode** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>R</kbd> - Currently Vimarily does not support entering Reader mode (due
+	to API limitations), also navigation inside reader mode (for example using <kbd>j</kbd> or <kbd>k</kbd>) is not
+	supported.
 
 - **Re-open last closed tab** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>T</kbd> - Allows you to reopen a recently closed tab.
 

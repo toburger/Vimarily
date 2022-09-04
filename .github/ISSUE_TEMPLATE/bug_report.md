@@ -12,6 +12,7 @@ A clear and concise description of what the bug is.
 
 **To Reproduce**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
@@ -35,9 +36,9 @@ printf -- "- macOS version: %s\n- Safari version: %s\n- Vimarily version: %s\n" 
 
 -->
 
- - macOS version: 
- - Safari version: 
- - Vimarily version: 
+- macOS version:
+- Safari version:
+- Vimarily version:
 
 **Additional context**
 Add any other context about the problem here.

@@ -74,7 +74,10 @@ var actionMap = {
 		function() { window.open(window.location.href); },
 
     'copyUrl':
-        function() { alert(window.location.href); },
+        function() {
+            navigator.clipboard.writeText(window.location.href);
+            HUD.showForDuration('Copied URL: ' + window.location.href, hudDuration);
+        },
 
 	'scrollDownHalfPage':
 		function() { customScrollBy(0, window.innerHeight / 2); },

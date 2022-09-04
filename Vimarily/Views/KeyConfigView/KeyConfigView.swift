@@ -12,20 +12,15 @@ struct KeyConfigView: View {
 		Form {
 			ScrollView {
 				VStack(alignment: .center) {
-					ForEach(viewModel.actions, id: \.self) { item in
+					ForEach(DefaultConfig.bindings, id: \.self) { item in
 						KeyConfig(item: item)
 					}
 						.listRowInsets(EdgeInsets())
 				}
 			}
-			Spacer()
-			HStack {
-				Button(action: viewModel.undo, label: { Text("Undo Changes") })
-				Button(action: viewModel.save, label: { Text("Save Changes") })
-			}
-				.frame(maxWidth: .infinity)
+			ReloadReminder()
 		}
-			.padding()
+			.padding(EdgeInsets(top: 0, leading: 8, bottom: 6, trailing: 8))
 	}
 
 	private struct KeyConfig: View {
@@ -35,11 +30,17 @@ struct KeyConfigView: View {
 
 		init(item: KeyBinding) {
 			self.item = item
-			shortcut = item.shortcut
+			shortcut = item.getShortcut()
 		}
 
 		var body: some View {
 			TextField(text: $shortcut, label: { Text(item.name) })
 		}
 	}
+}
+
+struct KeyConfigView_Previews: PreviewProvider {
+    static var previews: some View {
+        KeyConfigView(viewModel: KeyConfigViewModel())
+    }
 }

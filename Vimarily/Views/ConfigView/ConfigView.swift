@@ -12,19 +12,26 @@ struct ConfigView: View {
 
 	var body: some View {
 		TabView {
-			ExtensionSettingsView(viewModel: viewModel)
+			SafariConfigView(viewModel: viewModel)
 				.tabItem {
-					Label("Extension Settings", systemImage: "puzzlepiece.extension")
+					Label("General", systemImage: "safari")
 				}
+
+			ExtensionConfigView(viewModel: ExtensionConfigViewModel())
+				.tabItem {
+					Label("Settings", systemImage: "puzzlepiece.extension")
+				}
+
 			KeyConfigView(viewModel: KeyConfigViewModel())
 				.tabItem {
-					Label("Key Configuration", systemImage: "keyboard")
+					Label("Key Bindings", systemImage: "keyboard")
 				}
 		}
 	}
 
-	private struct ExtensionSettingsView: View {
+	private struct SafariConfigView: View {
 		@ObservedObject private var viewModel: ConfigViewModel
+		let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
 		init(viewModel: ConfigViewModel) {
 			self.viewModel = viewModel
@@ -33,49 +40,27 @@ struct ConfigView: View {
 		var body: some View {
 			VStack(alignment: .center) {
 				Image("Logo").resizable().scaledToFit().frame(maxHeight: 256).aspectRatio(contentMode: .fit).padding()
-				GeneralConfiguration(viewModel: viewModel).padding()
-				AdvancedConfiguration(viewModel: viewModel).padding()
-			}.padding()
-		}
-
-		private struct GeneralConfiguration: View {
-			@ObservedObject private var viewModel: ConfigViewModel
-
-			init(viewModel: ConfigViewModel) {
-				self.viewModel = viewModel
-			}
-
-			var body: some View {
-				VStack(alignment: .center) {
-					Text("Extension Status: " + viewModel.extensionStatus)
+				VStack(alignment: .center, spacing: 16) {
+					Text("Vimarily").font(.title)
+					Text("Status: " + viewModel.extensionStatus).font(.title2)
 					Button(action: viewModel.fetchExtensionStatus) {
-						Label("Refresh Extension Status", systemImage: "puzzlepiece.extension")
+						Text("Refresh Extension Status")
 					}
 					Button(action: viewModel.openSafariExtensionPreferencesClick) {
-						Label("Open Safari Extension Preferences", systemImage: "safari")
+						Text("Open Safari Extension Preferences")
 					}
+					Text("Version: " + (appVersion ?? "Unknown")).font(.footnote)
 				}
+					.padding()
 			}
+				.padding()
 		}
+	}
+}
 
-		private struct AdvancedConfiguration: View {
-			@ObservedObject private var viewModel: ConfigViewModel
 
-			init(viewModel: ConfigViewModel) {
-				self.viewModel = viewModel
-			}
-
-			var body: some View {
-				VStack(alignment: .center) {
-					Text("Advanced Settings").font(.title2)
-					Button(action: viewModel.dispatchOpenSettings) {
-						Label("Open Configuration File", systemImage: "square.and.pencil")
-					}
-					Button(action: viewModel.dispatchResetSettings) {
-						Label("Reset Configuration File", systemImage: "gobackward")
-					}
-				}
-			}
-		}
+struct ConfigView_Previews: PreviewProvider {
+	static var previews: some View {
+		ConfigView(viewModel: ConfigViewModel())
 	}
 }

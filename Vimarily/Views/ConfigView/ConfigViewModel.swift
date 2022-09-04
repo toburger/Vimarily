@@ -1,10 +1,6 @@
 import Foundation
 import SafariServices.SFSafariApplication
 
-private enum Constant {
-	static let openSettings = "openSettings"
-	static let resetSettings = "resetSettings"
-}
 
 class ConfigViewModel: ObservableObject {
 	@Published var extensionStatus: String = "";
@@ -42,28 +38,6 @@ class ConfigViewModel: ObservableObject {
 			withIdentifier: Constants.extensionIdentifier) { error in
 			if let _ = error {
 				NSLog("Error" + (error?.localizedDescription ?? "Unknown"))
-			}
-		}
-	}
-
-	func dispatchOpenSettings() {
-		SFSafariApplication.dispatchMessage(
-			withName: Constant.openSettings,
-			toExtensionWithIdentifier: Constants.extensionIdentifier,
-			userInfo: nil) { (error) in
-			if let error = error {
-				print(error.localizedDescription)
-			}
-		}
-	}
-
-	func dispatchResetSettings() {
-		SFSafariApplication.dispatchMessage(
-			withName: Constant.resetSettings,
-			toExtensionWithIdentifier: Constants.extensionIdentifier,
-			userInfo: nil) { (error) in
-			if let error = error {
-				print(error.localizedDescription)
 			}
 		}
 	}

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3306C028BD222119AE1556F7 /* DefaultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0DA051472AE10B558BA /* DefaultConfig.swift */; };
+		3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */; };
 		3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8982424BEAF1A994F26 /* KeyBinding.swift */; };
 		3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */; };
+		3306C6852F586F2B32687159 /* ExtensionConfigviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CBEA276E256F4A1922B9 /* ExtensionConfigviewModel.swift */; };
+		3306C90ACC33D6DC4ADDECDC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CDB556DFF1BFB9842AAA /* Config.swift */; };
+		3306C93CC71A8B923B81BC0D /* ExtensionConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C652F86CFAB0D3B39D5D /* ExtensionConfigView.swift */; };
 		3306CAA21AF06A71019E12CE /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */; };
 		3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C4D7D7B218764A4434CE /* Constants.swift */; };
 		3306CC038BD2BBBE3B9CA6F9 /* KeyConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0785AAD427FAE9BC718 /* KeyConfigView.swift */; };
@@ -62,10 +67,15 @@
 /* Begin PBXFileReference section */
 		3306C0785AAD427FAE9BC718 /* KeyConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigView.swift; sourceTree = "<group>"; };
 		3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		3306C0DA051472AE10B558BA /* DefaultConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConfig.swift; sourceTree = "<group>"; };
+		3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadReminder.swift; sourceTree = "<group>"; };
 		3306C2213248BF1931B37CF8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		3306C4D7D7B218764A4434CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3306C652F86CFAB0D3B39D5D /* ExtensionConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionConfigView.swift; sourceTree = "<group>"; };
 		3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigViewModel.swift; sourceTree = "<group>"; };
 		3306C8982424BEAF1A994F26 /* KeyBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBinding.swift; sourceTree = "<group>"; };
+		3306CBEA276E256F4A1922B9 /* ExtensionConfigviewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionConfigviewModel.swift; sourceTree = "<group>"; };
+		3306CDB556DFF1BFB9842AAA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
 		490CA56B28C4DAE700CDEE6B /* Vimarily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vimarily.swift; sourceTree = "<group>"; };
 		659033F024E2B77400432D0E /* svim-scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
@@ -120,11 +130,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3306C3F06279AA8F67E0FC73 /* ExtensionConfigView */ = {
+			isa = PBXGroup;
+			children = (
+				3306C652F86CFAB0D3B39D5D /* ExtensionConfigView.swift */,
+				3306CBEA276E256F4A1922B9 /* ExtensionConfigviewModel.swift */,
+			);
+			path = ExtensionConfigView;
+			sourceTree = "<group>";
+		};
 		3306C7288DC8206F459E7495 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3306C793C11AAC3FB15DD6E8 /* ConfigView */,
 				3306CAB3E83870AC70F4B64F /* KeyConfigView */,
+				3306C3F06279AA8F67E0FC73 /* ExtensionConfigView */,
+				3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				3306C8982424BEAF1A994F26 /* KeyBinding.swift */,
+				3306CDB556DFF1BFB9842AAA /* Config.swift */,
+				3306C0DA051472AE10B558BA /* DefaultConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -373,6 +396,11 @@
 				3306CC038BD2BBBE3B9CA6F9 /* KeyConfigView.swift in Sources */,
 				3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */,
 				3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */,
+				3306C90ACC33D6DC4ADDECDC /* Config.swift in Sources */,
+				3306C028BD222119AE1556F7 /* DefaultConfig.swift in Sources */,
+				3306C93CC71A8B923B81BC0D /* ExtensionConfigView.swift in Sources */,
+				3306C6852F586F2B32687159 /* ExtensionConfigviewModel.swift in Sources */,
+				3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +493,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+				);
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -523,6 +553,8 @@
 				MARKETING_VERSION = 1.0.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+				);
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

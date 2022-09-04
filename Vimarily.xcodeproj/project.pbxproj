@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8982424BEAF1A994F26 /* KeyBinding.swift */; };
+		3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */; };
 		3306CAA21AF06A71019E12CE /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */; };
 		3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C4D7D7B218764A4434CE /* Constants.swift */; };
+		3306CC038BD2BBBE3B9CA6F9 /* KeyConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0785AAD427FAE9BC718 /* KeyConfigView.swift */; };
 		3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3306C2213248BF1931B37CF8 /* Credits.rtf */; };
 		3306CE3E6C8C8EF28E5A61FB /* ConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */; };
 		490CA56C28C4DAE700CDEE6B /* Vimarily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490CA56B28C4DAE700CDEE6B /* Vimarily.swift */; };
@@ -57,9 +60,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3306C0785AAD427FAE9BC718 /* KeyConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigView.swift; sourceTree = "<group>"; };
 		3306C0A2D14E792D9C8AAE35 /* ConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
 		3306C2213248BF1931B37CF8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		3306C4D7D7B218764A4434CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigViewModel.swift; sourceTree = "<group>"; };
+		3306C8982424BEAF1A994F26 /* KeyBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBinding.swift; sourceTree = "<group>"; };
 		3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewModel.swift; sourceTree = "<group>"; };
 		490CA56B28C4DAE700CDEE6B /* Vimarily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vimarily.swift; sourceTree = "<group>"; };
 		659033F024E2B77400432D0E /* svim-scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				3306C793C11AAC3FB15DD6E8 /* ConfigView */,
+				3306CAB3E83870AC70F4B64F /* KeyConfigView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +136,23 @@
 				3306CDEFFFEA5FD65D6A262C /* ConfigViewModel.swift */,
 			);
 			path = ConfigView;
+			sourceTree = "<group>";
+		};
+		3306CA425DC6944EDFFB6242 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3306C8982424BEAF1A994F26 /* KeyBinding.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3306CAB3E83870AC70F4B64F /* KeyConfigView */ = {
+			isa = PBXGroup;
+			children = (
+				3306C0785AAD427FAE9BC718 /* KeyConfigView.swift */,
+				3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */,
+			);
+			path = KeyConfigView;
 			sourceTree = "<group>";
 		};
 		B1FD3B9723A588DE00677A52 /* json */ = {
@@ -168,6 +192,7 @@
 				3306C7288DC8206F459E7495 /* Views */,
 				3306C4D7D7B218764A4434CE /* Constants.swift */,
 				3306C09BD1720F627F8880A8 /* Resources */,
+				3306CA425DC6944EDFFB6242 /* Models */,
 			);
 			path = Vimarily;
 			sourceTree = "<group>";
@@ -345,6 +370,9 @@
 				3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */,
 				3306CAA21AF06A71019E12CE /* ConfigView.swift in Sources */,
 				3306CE3E6C8C8EF28E5A61FB /* ConfigViewModel.swift in Sources */,
+				3306CC038BD2BBBE3B9CA6F9 /* KeyConfigView.swift in Sources */,
+				3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */,
+				3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,6 @@ private enum Constant {
 class ExtensionConfigViewModel: ObservableObject {
 	@Published var config: Config = DefaultConfig
 
-	// TODO: store in config as actual numbers
-	@Published var scrollSize: String = ""
-	@Published var scrollDuration: String = ""
-
 	func dispatchOpenSettings() {
 		SFSafariApplication.dispatchMessage(
 			withName: Constant.openSettings,

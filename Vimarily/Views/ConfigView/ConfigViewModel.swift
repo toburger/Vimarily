@@ -1,15 +1,13 @@
 import Foundation
 import SafariServices.SFSafariApplication
 
-
 class ConfigViewModel: ObservableObject {
-	@Published var extensionStatus: String = "";
+	@Published var extensionStatus: String = ""
 
 	func fetchExtensionStatus() {
 		if SFSafariServicesAvailable() {
 			SFSafariExtensionManager.getStateOfSafariExtension(
-				withIdentifier: Constants.extensionIdentifier) {
-				state, error in
+				withIdentifier: Constants.extensionIdentifier) { state, error in
 				print("State", state as Any, "Error", error as Any, state?.isEnabled as Any)
 
 				DispatchQueue.main.async {
@@ -36,7 +34,7 @@ class ConfigViewModel: ObservableObject {
 	func openSafariExtensionPreferencesClick() {
 		SFSafariApplication.showPreferencesForExtension(
 			withIdentifier: Constants.extensionIdentifier) { error in
-			if let _ = error {
+			if error != nil {
 				NSLog("Error" + (error?.localizedDescription ?? "Unknown"))
 			}
 		}

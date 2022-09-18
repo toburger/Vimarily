@@ -17,27 +17,27 @@ class ConfigurationModel: ConfigurationModelProtocol {
 	}
 
 	let userSettingsUrl: URL = FileManager.documentDirectoryURL
-					.appendingPathComponent(Constant.userSettingsFileName)
-					.appendingPathExtension("json")
+		.appendingPathComponent(Constant.userSettingsFileName)
+		.appendingPathExtension("json")
 
 	func editConfigFile() throws {
 		let settingsFilePath = try findOrCreateUserSettings()
 		NSWorkspace.shared.openFile(
-				settingsFilePath,
-				withApplication: Constant.defaultEditor
+			settingsFilePath,
+			withApplication: Constant.defaultEditor
 		)
 	}
 
 	func resetConfigFile() throws {
 		let settingsFilePath = try overwriteUserSettings()
 		NSWorkspace.shared.openFile(
-				settingsFilePath,
-				withApplication: Constant.defaultEditor
+			settingsFilePath,
+			withApplication: Constant.defaultEditor
 		)
 	}
 
 	func getDefaultSettings() throws -> [String: Any] {
-		return try loadSettings(fromFile: Constant.settingsFileName)
+		try loadSettings(fromFile: Constant.settingsFileName)
 	}
 
 	func getUserSettings() throws -> [String: Any] {
@@ -104,7 +104,14 @@ private extension Bundle {
 
 private extension FileManager {
 	static var documentDirectoryURL: URL {
-		let documentDirectoryURL = try! FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+		// swiftlint:disable force_try
+		let documentDirectoryURL = try!
+		FileManager.default.url(
+			for: .applicationSupportDirectory,
+			in: .userDomainMask,
+			appropriateFor: nil,
+			create: false
+		)
 		return documentDirectoryURL
 	}
 }

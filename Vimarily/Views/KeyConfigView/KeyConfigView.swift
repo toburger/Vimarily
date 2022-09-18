@@ -40,7 +40,7 @@ struct KeyConfigView: View {
 }
 
 struct KeyConfigView_Previews: PreviewProvider {
-    static var previews: some View {
-        KeyConfigView(viewModel: KeyConfigViewModel())
-    }
+	static var previews: some View {
+		KeyConfigView(viewModel: KeyConfigViewModel())
+	}
 }

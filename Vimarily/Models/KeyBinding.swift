@@ -1,6 +1,7 @@
 import Foundation
 
 // TODO support multiple shortcuts
+
 struct KeyBinding: Hashable {
 	var name: String
 	var id: String
@@ -13,6 +14,7 @@ struct KeyBinding: Hashable {
 	}
 
 	// TODO temporary
+
 	func getShortcut() -> String {
 		shortcuts[0]
 	}

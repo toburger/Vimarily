@@ -5,9 +5,9 @@
 ### Local setup
 
 1. Clone the repository:
-	 ```bash
-	 git clone git@github.com:marcdonald/vimarily.git
-	 ```
+	  ```bash
+		git clone git@github.com:marcdonald/vimarily.git
+		```
 2. Open `Vimarily.xcodeproj` with Xcode.
 3. [Set your signing team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4) for both targets (Vimarily and
 	 Vimarily Extension).

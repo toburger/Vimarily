@@ -22,12 +22,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
 	private enum Constant {
 		static let mainAppName = "Vimarily"
-		static let newTabPageURL = "https://google.com" //Try it :D
+		static let newTabPageURL = "https://google.com" // Try it :D
 	}
 
 	let configuration: ConfigurationModelProtocol = ConfigurationModel()
 
-	//MARK: Overrides
+	// MARK: Overrides
 
 	// This method handles messages from the Vimarily App (located /Vimarily in the repository)
 	override func messageReceivedFromContainingApp(withName messageName: String, userInfo: [String: Any]? = nil) {
@@ -47,13 +47,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	}
 
 	// This method handles messages from the extension (in the browser page)
-
 	override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String: Any]?) {
 		NSLog("Received message: \(messageName)")
 		switch ActionType(rawValue: messageName) {
 		case .openLinkInTab:
-			let url = URL(string: userInfo?["url"] as! String)
-			openInNewTab(url: url!)
+			if let urlString = userInfo?["url"] as? String {
+				if let url = URL(string: urlString) {
+					openInNewTab(url: url as URL)
+				}
+			}
 		case .tabForward:
 			changeTab(withDirection: .forward, from: page)
 		case .tabBackward:
@@ -73,8 +75,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 		NSWorkspace.shared.launchApplication(Constant.mainAppName)
 	}
 
-	override func validateToolbarItem(in _: SFSafariWindow, validationHandler: @escaping (Bool, String) -> Void) {
-		// This is called when Safari's state changed in some way that would require the extension's toolbar item to be validated again.
+	override func validateToolbarItem(
+		in _: SFSafariWindow,
+		validationHandler: @escaping (Bool, String) -> Void
+	) {
+		/* This is called when Safari's state changed in some way that would require the extension's toolbar item to be
+			 	validated again.
+ 		*/
 		validationHandler(true, "")
 	}
 
@@ -92,11 +99,15 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 		}
 	}
 
-	private func changeTab(withDirection direction: TabDirection, from page: SFSafariPage, completionHandler: (() -> Void)? = nil) {
-		page.getContainingTab() { currentTab in
+	private func changeTab(
+		withDirection direction: TabDirection,
+		from page: SFSafariPage,
+		completionHandler: (() -> Void)? = nil
+	) {
+		page.getContainingTab { currentTab in
 			// Using .currentWindow instead of .containingWindow, this prevents the window being nil in the case of a pinned tab.
 			self.currentWindow(from: page) { window in
-				window?.getAllTabs() { tabs in
+				window?.getAllTabs { tabs in
 					tabs.forEach { tab in
 						NSLog(tab.description)
 					}
@@ -121,12 +132,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
      Returns the containing window of a SFSafariPage, if not available default to the current active window.
      */
 	private func currentWindow(from page: SFSafariPage, completionHandler: @escaping (SFSafariWindow?) -> Void) {
-		page.getContainingTab() {
-			$0.getContainingWindow() { window in
+		page.getContainingTab {
+			$0.getContainingWindow { window in
 				if window != nil {
 					return completionHandler(window)
 				} else {
-					SFSafariApplication.getActiveWindow() { window in
+					SFSafariApplication.getActiveWindow { window in
 						return completionHandler(window)
 					}
 				}
@@ -135,8 +146,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	}
 
 	private func closeTab(from page: SFSafariPage) {
-		page.getContainingTab {
-			tab in
+		page.getContainingTab { tab in
 			tab.close()
 		}
 	}
@@ -179,6 +189,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
 // MARK: Helpers
 
+// swiftlint:disable identifier_name
 private func mod(_ a: Int, _ n: Int) -> Int {
 	// https://stackoverflow.com/questions/41180292/negative-number-modulo-in-swift
 	precondition(n > 0, "modulus must be positive")
@@ -189,8 +200,8 @@ private func mod(_ a: Int, _ n: Int) -> Int {
 private extension SFSafariPage {
 	func dispatch(settings: [String: Any]) {
 		self.dispatchMessageToScript(
-				withName: "updateSettingsEvent",
-				userInfo: settings
+			withName: "updateSettingsEvent",
+			userInfo: settings
 		)
 	}
 }
@@ -204,4 +215,3 @@ private extension SFSafariApplication {
 		}
 	}
 }
-

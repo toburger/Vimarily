@@ -6,7 +6,7 @@ struct ErrorText: View {
 	var condition: Bool
 
 	var body: some View {
-		if(condition) {
+		if condition {
 			Text(text).foregroundColor(.red)
 		}
 	}

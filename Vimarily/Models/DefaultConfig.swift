@@ -1,5 +1,6 @@
 import Foundation
 
+// swiftlint:disable identifier_name
 var DefaultConfig: Config = Config(
 	excludedUrls: "",
 	linkHintCharacters: "asdfghjklzxcvbnm",
@@ -30,6 +31,6 @@ var DefaultConfig: Config = Config(
 		KeyBinding(name: "Close Tab", id: "closeTab", shortcut: "x"),
 		KeyBinding(name: "New Tab", id: "openTab", shortcut: "t"),
 		KeyBinding(name: "Duplicate Tab", id: "duplicateTab", shortcut: "y t"),
-		KeyBinding(name: "Copy URL", id: "copyUrl", shortcut: "y y"),
+		KeyBinding(name: "Copy URL", id: "copyUrl", shortcut: "y y")
 	]
 )

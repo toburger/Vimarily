@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3306C028BD222119AE1556F7 /* DefaultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0DA051472AE10B558BA /* DefaultConfig.swift */; };
+		3306C09E92DD22F68026060A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3306C459455B920553332640 /* .swiftlint.yml */; };
 		3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */; };
 		3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8982424BEAF1A994F26 /* KeyBinding.swift */; };
 		3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */; };
@@ -71,6 +72,7 @@
 		3306C0DA051472AE10B558BA /* DefaultConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConfig.swift; sourceTree = "<group>"; };
 		3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadReminder.swift; sourceTree = "<group>"; };
 		3306C2213248BF1931B37CF8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		3306C459455B920553332640 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3306C4D7D7B218764A4434CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3306C652F86CFAB0D3B39D5D /* ExtensionConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionConfigView.swift; sourceTree = "<group>"; };
 		3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigViewModel.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				E380F2602331806500640547 /* Vimarily Extension */,
 				E380F25D2331806500640547 /* Frameworks */,
 				E380F2472331806400640547 /* Products */,
+				3306C459455B920553332640 /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -363,6 +366,7 @@
 			files = (
 				E380F2532331806500640547 /* Assets.xcassets in Resources */,
 				3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */,
+				3306C09E92DD22F68026060A /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

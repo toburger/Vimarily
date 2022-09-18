@@ -6,23 +6,23 @@ comes Safari 12, and a [completely new way of dealing with browser
 extensions](https://developer.apple.com/documentation/safariservices/safari_app_extensions).
 [We have had some issues](./crowdfunding.md) related to releasing new version
 of this extension, but they are now fixed and it's possible to install a version
-of saviy for Safari 12.
+of Vimarily for Safari 12.
 
 ## How to install
 
 **Note: We are currently working on improving this installation flow, as well
-as the extension itself. Because saviy now has to be released as a _Safari
+as the extension itself. Because Vimarily now has to be released as a _Safari
 App Extension_ instead of a _Safari Extension_ it requires some fundamental
 changes to the code. We can't guarantee that all the features work in
 this version. It's a learning process for us so bare with us.**
 
 1. Clone this repo
-	  ```sh
-		$ git clone git@github.com:guyht/saviy.git
-		```
-2. Open the Swift project located at `/Saviy.xcodeproj` in Xcode
-3. Configure the Signing settings for both the `saviy` and `extension` targets
-	 to use your information rather than the Saviy team's (
+	 	```sh
+		 $ git clone git@github.com:guyht/Vimarily.git
+		 ```
+2. Open the Swift project located at `/Vimarily.xcodeproj` in Xcode
+3. Configure the Signing settings for both the `Vimarily` and `extension` targets
+	 to use your information rather than the Vimarily team's (
 	 see [this SO answer](https://stackoverflow.com/questions/39754341/none-of-your-accounts-are-a-member-code-signing-errors-after-upgrading-to-xcode)
 	 for more information).
 4. If you want different settings than the default ones, make your changes in
@@ -30,7 +30,7 @@ this version. It's a learning process for us so bare with us.**
 5. Build and run the project (`⌘ + r`)
 6. An empty GUI box will show up - ignore it (we'll fix it later). Go to
 	 Safari and open up settings (`⌘ + ,`). Go to _Extensions_ and you should
-	 see **saviy** in the list of extensions. Enable it.
+	 see **Vimarily** in the list of extensions. Enable it.
 7. You may now press stop in Xcode and close Xcode. The extension will be
 	 available even if you restart Safari.
 

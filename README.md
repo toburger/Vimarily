@@ -9,7 +9,8 @@ _Keyboard Shortcuts extension for Safari_
 
 Vimarily (pronounced like 'primarily') is a Safari extension that provides vim style keyboard based navigation.
 This lets you control Safari from your keyboard instead of having to use your mouse to open links, scroll, etc.
-This is a fork of [Vimari](https://github.com/televator-apps/vimari) which is heavily based
+
+Vimarily is a fork of [Vimari](https://github.com/televator-apps/vimari) which is heavily based
 on [vimium](https://github.com/philc/vimium), a
 Chrome extension that provides much more extensive features.
 
@@ -17,21 +18,34 @@ Chrome extension that provides much more extensive features.
 
 ## Releases
 
-## Installation
+As of now there are no stable releases of Vimarily.
 
-### Safari 12 and above (macOS Mojave or above)
+[//]: # (## Installation)
 
-#### Prebuilt binaries
+[//]: # ()
+[//]: # (### Safari 12 and above &#40;macOS Mojave or above&#41;)
 
-1. Download the [latest version](https://github.com/marcdonald/vimarily/releases/latest) of Vimarily
-2. Unzip it
-3. Move it to your `/Applications` folder
-4. Launch Vimarily.app
-5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open
-6. Make sure that the checkbox for the Vimarily extension is ticked
-7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is
-	 ready.
-8. You may need to relaunch Safari for the extension to work
+[//]: # ()
+[//]: # (#### Prebuilt binaries)
+
+[//]: # ()
+[//]: # (1. Download the [latest version]&#40;https://github.com/marcdonald/vimarily/releases/latest&#41; of Vimarily)
+
+[//]: # (2. Unzip it)
+
+[//]: # (3. Move it to your `/Applications` folder)
+
+[//]: # (4. Launch Vimarily.app)
+
+[//]: # (5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open)
+
+[//]: # (6. Make sure that the checkbox for the Vimarily extension is ticked)
+
+[//]: # (7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is)
+
+[//]: # (	 ready.)
+
+[//]: # (8. You may need to relaunch Safari for the extension to work)
 
 ## Usage
 
@@ -84,4 +98,10 @@ default Safari shortcuts can help you keep your hands at the keyboard. Some help
 
 ## License
 
+### Vimarily
+
 Copyright (C) 2022 Marc Donald. See [LICENSE](LICENSE) for details.
+
+### Vimari
+
+Copyright (c) 2010 Phil Crosby, Ilya Sukhar. See [VIMARI_LICENSE](VIMARI_LICENSE) for details.

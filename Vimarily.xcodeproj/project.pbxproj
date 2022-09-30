@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		3306C028BD222119AE1556F7 /* DefaultConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0DA051472AE10B558BA /* DefaultConfig.swift */; };
 		3306C09E92DD22F68026060A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3306C459455B920553332640 /* .swiftlint.yml */; };
+		3306C0FACC0EA21459A89F74 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */; };
 		3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */; };
 		3306C41EC80EC3943A833DF7 /* KeyBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8982424BEAF1A994F26 /* KeyBinding.swift */; };
+		3306C4420B6EEF86538E3C51 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */; };
 		3306C6815F6B63463ED59505 /* KeyConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */; };
 		3306C6852F586F2B32687159 /* ExtensionConfigviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CBEA276E256F4A1922B9 /* ExtensionConfigviewModel.swift */; };
 		3306C802F2BFE301BDC3A495 /* ErrorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CBA39B7B2560138E3487 /* ErrorText.swift */; };
@@ -77,6 +79,7 @@
 		3306C652F86CFAB0D3B39D5D /* ExtensionConfigView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionConfigView.swift; sourceTree = "<group>"; };
 		3306C746646546C49F6BD7BF /* KeyConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyConfigViewModel.swift; sourceTree = "<group>"; };
 		3306C8982424BEAF1A994F26 /* KeyBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBinding.swift; sourceTree = "<group>"; };
+		3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		3306CBA39B7B2560138E3487 /* ErrorText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorText.swift; sourceTree = "<group>"; };
 		3306CBEA276E256F4A1922B9 /* ExtensionConfigviewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionConfigviewModel.swift; sourceTree = "<group>"; };
 		3306CDB556DFF1BFB9842AAA /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -170,6 +173,7 @@
 				3306C8982424BEAF1A994F26 /* KeyBinding.swift */,
 				3306CDB556DFF1BFB9842AAA /* Config.swift */,
 				3306C0DA051472AE10B558BA /* DefaultConfig.swift */,
+				3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +413,7 @@
 				3306C6852F586F2B32687159 /* ExtensionConfigviewModel.swift in Sources */,
 				3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */,
 				3306C802F2BFE301BDC3A495 /* ErrorText.swift in Sources */,
+				3306C0FACC0EA21459A89F74 /* UserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +424,7 @@
 				E380F2642331806500640547 /* SafariExtensionViewController.swift in Sources */,
 				E380F2622331806500640547 /* SafariExtensionHandler.swift in Sources */,
 				B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */,
+				3306C4420B6EEF86538E3C51 /* UserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

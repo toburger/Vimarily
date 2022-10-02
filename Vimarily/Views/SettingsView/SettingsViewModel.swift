@@ -41,7 +41,7 @@ class SettingsViewModel: ObservableObject {
 	}
 
 	public func reset() {
-		UserDefaults.INSTANCE.reset()
+		UserDefaults.INSTANCE.resetGeneralSettings()
 		populate()
 	}
 }

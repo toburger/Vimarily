@@ -88,8 +88,7 @@ extension UserDefaults {
 		stringArray(forKey: key.rawValue)?[0]
 	}
 
-	func reset() {
-		// General
+	func resetGeneralSettings() {
 		set([""], forKey: .generalKey(.excludedUrls))
 		set("asdfghjklzxcvbnm", forKey: .generalKey(.linkHintCharacters))
 		set(false, forKey: .generalKey(.detectByCursorStyle))
@@ -99,8 +98,9 @@ extension UserDefaults {
 		set("https://google.com", forKey: .generalKey(.openTabUrl))
 		set("", forKey: .generalKey(.modifier))
 		set(true, forKey: .generalKey(.transparentBindings))
+	}
 
-		// Bindings
+	func resetKeyBindings() {
 		set(["f"], forKey: .bindingKey(.hintToggleBinding))
 		set(["shift+f"], forKey: .bindingKey(.newTabHintToggleBinding))
 		set(["k"], forKey: .bindingKey(.scrollUpBinding))

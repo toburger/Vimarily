@@ -13,30 +13,32 @@ struct KeyBindingsView: View {
 			ScrollView {
 				VStack(alignment: .center) {
 					ForEach(UserDefaults.BindingKeys.allCases, id: \.self) { key in
-						BindingKeyConfig(key: key)
+						TextField(text: Binding(
+							// TODO temp get and set the first index
+							get: { viewModel.actionBindings[key]?[0] ?? "" },
+							set: {
+								viewModel.actionBindings[key]?[0] = $0
+							}
+						), label: { Text(key.rawValue) })
 					}
 						.listRowInsets(EdgeInsets())
 				}
 			}
+			HStack {
+				Button(
+					role: .destructive,
+					action: viewModel.reset,
+					label: { Text("Reset to Default") }
+				)
+				Button(
+					action: viewModel.save,
+					label: { Text("Save") }
+				).buttonStyle(.borderedProminent)
+			}
+				.frame(maxWidth: .infinity)
 			ReloadReminder()
-			Button(action: {}, label: { Text("Save")}).buttonStyle(.borderedProminent).frame(maxWidth: .infinity, alignment: .center)
 		}
 			.padding(EdgeInsets(top: 0, leading: 8, bottom: 6, trailing: 8))
-	}
-
-	private struct BindingKeyConfig: View {
-		@State var shortcut: String
-
-		private var key: UserDefaults.BindingKeys
-
-		init(key: UserDefaults.BindingKeys) {
-			self.key = key
-			shortcut = UserDefaults.INSTANCE.tempGetSingleBinding(forKey: key) ?? ""
-		}
-
-		var body: some View {
-			TextField(text: $shortcut, label: { Text(key.rawValue) })
-		}
 	}
 }
 

@@ -9,7 +9,7 @@ struct Vimarily: App {
 			UserDefaults.INSTANCE.set(true, forKey: .generalKey(.firstRunGone))
 
 			// Set preferences to their defaults
-			UserDefaults.INSTANCE.reset()
+			UserDefaults.INSTANCE.resetGeneralSettings()
 		}
 	}
 

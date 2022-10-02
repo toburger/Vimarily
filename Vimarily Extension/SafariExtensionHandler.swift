@@ -22,7 +22,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
 	private enum Constant {
 		static let mainAppName = "Vimarily"
-		static let newTabPageURL = "https://google.com" // Try it :D
+		static let newTabPageURL = "https://google.com"
 	}
 
 	let configuration: ConfigurationModelProtocol = ConfigurationModel()

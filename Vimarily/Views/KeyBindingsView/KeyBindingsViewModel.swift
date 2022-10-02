@@ -1,6 +1,6 @@
 import Foundation
 
-class KeyConfigViewModel: ObservableObject {
+class KeyBindingsViewModel: ObservableObject {
 	func save() {
 		// TODO
 		print("TODO save")

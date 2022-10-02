@@ -4,9 +4,9 @@ import SwiftUI
 struct Vimarily: App {
 
 	init() {
-		if UserDefaults.INSTANCE.bool(forKey: .firstRunGone) == false {
+		if UserDefaults.INSTANCE.bool(forKey: .generalKey(.firstRunGone)) == false {
 			// This will be executed on first run
-			UserDefaults.INSTANCE.set(true, forKey: .firstRunGone)
+			UserDefaults.INSTANCE.set(true, forKey: .generalKey(.firstRunGone))
 
 			// Set preferences to their defaults
 			UserDefaults.INSTANCE.reset()
@@ -15,7 +15,7 @@ struct Vimarily: App {
 
 	var body: some Scene {
 		WindowGroup {
-			ConfigView(viewModel: ConfigViewModel())
+			GeneralView(viewModel: GeneralViewModel())
 				.frame(
 					minWidth: 512,
 					idealWidth: 512,

@@ -3,9 +3,8 @@ import Foundation
 fileprivate let defaults: UserDefaults = UserDefaults.standard
 
 extension UserDefaults {
-	enum Key: String {
+	enum GeneralKeys: String, CaseIterable {
 		case firstRunGone = "firstRunGone"
-
 		case excludedUrls = "excludedUrls"
 		case linkHintCharacters = "linkHintCharacters"
 		case detectByCursorStyle = "detectByCursorStyle"
@@ -15,7 +14,9 @@ extension UserDefaults {
 		case openTabUrl = "openTabUrl"
 		case modifier = "modifier"
 		case transparentBindings = "transparentBindings"
+	}
 
+	enum BindingKeys: String, CaseIterable {
 		// Bindings
 		case hintToggleBinding = "hintToggle"
 		case newTabHintToggleBinding = "newTabHintToggle"
@@ -37,6 +38,20 @@ extension UserDefaults {
 		case openTabBinding = "openTab"
 		case duplicateTabBinding = "duplicateTab"
 		case copyUrlBinding = "copyUrl"
+	}
+
+	enum Key {
+		case generalKey(GeneralKeys)
+		case bindingKey(BindingKeys)
+
+		var rawValue: String {
+			switch self {
+			case .generalKey(let generalKey):
+				return generalKey.rawValue
+			case .bindingKey(let bindingKey):
+				return bindingKey.rawValue
+			}
+		}
 	}
 
 	static var INSTANCE: UserDefaults {
@@ -69,41 +84,42 @@ extension UserDefaults {
 		stringArray(forKey: key.rawValue)
 	}
 
-	func tempGetSingleBinding(forKey key: Key) -> String? {
-		stringArray(forKey: key)?[0]
+	func tempGetSingleBinding(forKey key: BindingKeys) -> String? {
+		stringArray(forKey: key.rawValue)?[0]
 	}
 
 	func reset() {
-		set([""], forKey: .excludedUrls)
-		set("asdfghjklzxcvbnm", forKey: .linkHintCharacters)
-		set(false, forKey: .detectByCursorStyle)
-		set(150, forKey: .scrollSize)
-		set(25, forKey: .scrollDuration)
-		set(true, forKey: .smoothScroll)
-		set("https://google.com", forKey: .openTabUrl)
-		set("", forKey: .modifier)
-		set(true, forKey: .transparentBindings)
+		// General
+		set([""], forKey: .generalKey(.excludedUrls))
+		set("asdfghjklzxcvbnm", forKey: .generalKey(.linkHintCharacters))
+		set(false, forKey: .generalKey(.detectByCursorStyle))
+		set(150, forKey: .generalKey(.scrollSize))
+		set(25, forKey: .generalKey(.scrollDuration))
+		set(true, forKey: .generalKey(.smoothScroll))
+		set("https://google.com", forKey: .generalKey(.openTabUrl))
+		set("", forKey: .generalKey(.modifier))
+		set(true, forKey: .generalKey(.transparentBindings))
 
 		// Bindings
-		set(["f"], forKey: .hintToggleBinding)
-		set(["shift+f"], forKey: .newTabHintToggleBinding)
-		set(["k"], forKey: .scrollUpBinding)
-		set(["j"], forKey: .scrollDownBinding)
-		set(["h"], forKey: .scrollLeftBinding)
-		set(["l"], forKey: .scrollRightBinding)
-		set(["u"], forKey: .scrollUpHalfPageBinding)
-		set(["d"], forKey: .scrollDownHalfPageBinding)
-		set(["g g"], forKey: .goToPageTopBinding)
-		set(["shift+g"], forKey: .goToPageBottomBinding)
-		set(["g i"], forKey: .goToFirstInputBinding)
-		set(["shift+j"], forKey: .goBackBinding)
-		set(["shift+k"], forKey: .goForwardBinding)
-		set(["r"], forKey: .reloadBinding)
-		set(["w"], forKey: .tabBackBinding)
-		set(["q"], forKey: .tabForwardBinding)
-		set(["x"], forKey: .closeTabBinding)
-		set(["t"], forKey: .openTabBinding)
-		set(["y t"], forKey: .duplicateTabBinding)
-		set(["y y"], forKey: .copyUrlBinding)
+		set(["f"], forKey: .bindingKey(.hintToggleBinding))
+		set(["shift+f"], forKey: .bindingKey(.newTabHintToggleBinding))
+		set(["k"], forKey: .bindingKey(.scrollUpBinding))
+		set(["j"], forKey: .bindingKey(.scrollDownBinding))
+		set(["h"], forKey: .bindingKey(.scrollLeftBinding))
+		set(["l"], forKey: .bindingKey(.scrollRightBinding))
+		set(["u"], forKey: .bindingKey(.scrollUpHalfPageBinding))
+		set(["d"], forKey: .bindingKey(.scrollDownHalfPageBinding))
+		set(["g g"], forKey: .bindingKey(.goToPageTopBinding))
+		set(["shift+g"], forKey: .bindingKey(.goToPageBottomBinding))
+		set(["g i"], forKey: .bindingKey(.goToFirstInputBinding))
+		set(["shift+j"], forKey: .bindingKey(.goBackBinding))
+		set(["shift+k"], forKey: .bindingKey(.goForwardBinding))
+		set(["r"], forKey: .bindingKey(.reloadBinding))
+		set(["w"], forKey: .bindingKey(.tabBackBinding))
+		set(["q"], forKey: .bindingKey(.tabForwardBinding))
+		set(["x"], forKey: .bindingKey(.closeTabBinding))
+		set(["t"], forKey: .bindingKey(.openTabBinding))
+		set(["y t"], forKey: .bindingKey(.duplicateTabBinding))
+		set(["y y"], forKey: .bindingKey(.copyUrlBinding))
 	}
 }

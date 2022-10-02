@@ -2,10 +2,10 @@ import SwiftUI
 import Cocoa
 import OSLog
 
-struct ConfigView: View {
-	@ObservedObject var viewModel: ConfigViewModel
+struct GeneralView: View {
+	@ObservedObject var viewModel: GeneralViewModel
 
-	init(viewModel: ConfigViewModel) {
+	init(viewModel: GeneralViewModel) {
 		self.viewModel = viewModel
 		viewModel.fetchExtensionStatus()
 	}
@@ -17,12 +17,12 @@ struct ConfigView: View {
 					Label("General", systemImage: "safari")
 				}
 
-			ExtensionConfigView(viewModel: ExtensionConfigViewModel())
+			SettingsView(viewModel: SettingsViewModel())
 				.tabItem {
 					Label("Settings", systemImage: "puzzlepiece.extension")
 				}
 
-			KeyConfigView(viewModel: KeyConfigViewModel())
+			KeyBindingsView(viewModel: KeyBindingsViewModel())
 				.tabItem {
 					Label("Key Bindings", systemImage: "keyboard")
 				}
@@ -30,10 +30,10 @@ struct ConfigView: View {
 	}
 
 	private struct SafariConfigView: View {
-		@ObservedObject private var viewModel: ConfigViewModel
+		@ObservedObject private var viewModel: GeneralViewModel
 		let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
-		init(viewModel: ConfigViewModel) {
+		init(viewModel: GeneralViewModel) {
 			self.viewModel = viewModel
 		}
 
@@ -58,8 +58,8 @@ struct ConfigView: View {
 	}
 }
 
-struct ConfigView_Previews: PreviewProvider {
+struct GeneralView_Previews: PreviewProvider {
 	static var previews: some View {
-		ConfigView(viewModel: ConfigViewModel())
+		GeneralView(viewModel: GeneralViewModel())
 	}
 }

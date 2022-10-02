@@ -1,7 +1,7 @@
 import Foundation
 import SafariServices.SFSafariApplication
 
-class ConfigViewModel: ObservableObject {
+class GeneralViewModel: ObservableObject {
 	@Published var extensionStatus: String = ""
 
 	func fetchExtensionStatus() {

@@ -9,8 +9,7 @@ enum ActionType: String {
 }
 
 enum InputAction: String {
-	case openSettings
-	case resetSettings
+	case exampleInputAction
 }
 
 enum TabDirection: String {
@@ -33,15 +32,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	override func messageReceivedFromContainingApp(withName messageName: String, userInfo: [String: Any]? = nil) {
 		do {
 			switch InputAction(rawValue: messageName) {
-			case .openSettings:
-				try configuration.editConfigFile()
-			case .resetSettings:
-				try configuration.resetConfigFile()
+			case .exampleInputAction:
+				NSLog("Example Input Action")
 			case .none:
 				NSLog("Input not supported " + messageName)
 			}
 		} catch {
-			NSLog(error.localizedDescription)
+			NSLog("Message Received " + error.localizedDescription)
 		}
 
 	}

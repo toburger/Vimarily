@@ -7,7 +7,7 @@ class GeneralViewModel: ObservableObject {
 	func fetchExtensionStatus() {
 		if SFSafariServicesAvailable() {
 			SFSafariExtensionManager.getStateOfSafariExtension(
-				withIdentifier: Constants.extensionIdentifier) { state, error in
+				withIdentifier: (Bundle.main.bundleIdentifier ?? "") + Constants.extensionIdentifierSuffix) { state, error in
 				print("State", state as Any, "Error", error as Any, state?.isEnabled as Any)
 
 				DispatchQueue.main.async {
@@ -20,7 +20,7 @@ class GeneralViewModel: ObservableObject {
 						}
 					}
 					if let error = error {
-						NSLog("Error", error.localizedDescription)
+						NSLog("Error fetching extension status: ", error.localizedDescription)
 						self.extensionStatus = error.localizedDescription
 					}
 				}
@@ -33,7 +33,7 @@ class GeneralViewModel: ObservableObject {
 
 	func openSafariExtensionPreferencesClick() {
 		SFSafariApplication.showPreferencesForExtension(
-			withIdentifier: Constants.extensionIdentifier) { error in
+			withIdentifier: (Bundle.main.bundleIdentifier ?? "") + Constants.extensionIdentifierSuffix) { error in
 			if error != nil {
 				NSLog("Error" + (error?.localizedDescription ?? "Unknown"))
 			}

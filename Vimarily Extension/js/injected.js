@@ -409,6 +409,8 @@ function isExcludedUrl(storedExcludedUrls, currentUrl) {
 	// TODO temporarily only the first index until comma separated string is replaced with array
 	if (storedExcludedUrls[0]) {
 		excludedUrls = storedExcludedUrls[0].split(',');
+	} else {
+		excludedUrls = '';
 	}
 
 	for (_i = 0, _len = excludedUrls.length; _i < _len; _i++) {

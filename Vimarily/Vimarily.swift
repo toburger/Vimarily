@@ -3,14 +3,13 @@ import SwiftUI
 @main
 struct Vimarily: App {
 	init() {
-		NSApplication.shared.setActivationPolicy(.accessory)
-
 		if UserDefaults.INSTANCE.bool(forKey: .generalKey(.firstRunGone)) == false {
 			// This will be executed on first run
 			UserDefaults.INSTANCE.set(true, forKey: .generalKey(.firstRunGone))
 
 			// Set preferences to their defaults
 			UserDefaults.INSTANCE.resetGeneralSettings()
+			UserDefaults.INSTANCE.resetKeyBindings()
 		}
 	}
 

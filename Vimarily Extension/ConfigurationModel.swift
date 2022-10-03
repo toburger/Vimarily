@@ -41,10 +41,12 @@ class ConfigurationModel: ConfigurationModelProtocol {
 	}
 
 	func getUserSettings() throws -> [String: Any] {
-		let userFilePath = try findOrCreateUserSettings()
-		let urlSettingsFile = URL(fileURLWithPath: userFilePath)
-		let settingsData = try Data(contentsOf: urlSettingsFile)
-		return try settingsData.toJSONObject()
+//		let userFilePath = try findOrCreateUserSettings()
+//		let urlSettingsFile = URL(fileURLWithPath: userFilePath)
+//		let settingsData = try Data(contentsOf: urlSettingsFile)
+//		return try settingsData.toJSONObject()
+	// TODO
+		return [:]
 	}
 
 	private func loadSettings(fromFile file: String) throws -> [String: Any] {

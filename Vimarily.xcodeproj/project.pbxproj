@@ -18,6 +18,7 @@
 		3306CAA21AF06A71019E12CE /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0A2D14E792D9C8AAE35 /* GeneralView.swift */; };
 		3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C4D7D7B218764A4434CE /* Constants.swift */; };
 		3306CC038BD2BBBE3B9CA6F9 /* KeyBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0785AAD427FAE9BC718 /* KeyBindingsView.swift */; };
+		3306CCF1F01B4F5FCCE90243 /* VimarilyExtensionDebug.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 3306CD34A53468F058B434BC /* VimarilyExtensionDebug.entitlements */; };
 		3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3306C2213248BF1931B37CF8 /* Credits.rtf */; };
 		3306CE3E6C8C8EF28E5A61FB /* GeneralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CDEFFFEA5FD65D6A262C /* GeneralViewModel.swift */; };
 		490CA56C28C4DAE700CDEE6B /* Vimarily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490CA56B28C4DAE700CDEE6B /* Vimarily.swift */; };
@@ -26,7 +27,7 @@
 		B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */; };
 		B1FD3B9923A588DE00677A52 /* defaultSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B1FD3B9823A588DE00677A52 /* defaultSettings.json */; };
 		E380F2532331806500640547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E380F2522331806500640547 /* Assets.xcassets */; };
-		E380F25A2331806500640547 /* Vimarily Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E380F2592331806500640547 /* Vimarily Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E380F25A2331806500640547 /* Vimarily Extension Debug.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E380F2592331806500640547 /* Vimarily Extension Debug.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E380F25F2331806500640547 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E380F25E2331806500640547 /* Cocoa.framework */; };
 		E380F2622331806500640547 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380F2612331806500640547 /* SafariExtensionHandler.swift */; };
 		E380F2642331806500640547 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380F2632331806500640547 /* SafariExtensionViewController.swift */; };
@@ -58,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E380F25A2331806500640547 /* Vimarily Extension.appex in Embed Foundation Extensions */,
+				E380F25A2331806500640547 /* Vimarily Extension Debug.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,24 +78,25 @@
 		3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		3306CBA39B7B2560138E3487 /* ErrorText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorText.swift; sourceTree = "<group>"; };
 		3306CBEA276E256F4A1922B9 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		3306CD34A53468F058B434BC /* VimarilyExtensionDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VimarilyExtensionDebug.entitlements; sourceTree = "<group>"; };
 		3306CDEFFFEA5FD65D6A262C /* GeneralViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewModel.swift; sourceTree = "<group>"; };
 		490CA56B28C4DAE700CDEE6B /* Vimarily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vimarily.swift; sourceTree = "<group>"; };
+		498734DE28EB2303001602B9 /* VimarilyDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VimarilyDebug.entitlements; sourceTree = "<group>"; };
+		498734DF28EB24A1001602B9 /* VimarilyExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VimarilyExtensionRelease.entitlements; sourceTree = "<group>"; };
 		659033F024E2B77400432D0E /* svim-scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
 		65E444F224CC3A1B008EA1DC /* SafariExtensionCommunicator.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = SafariExtensionCommunicator.js; sourceTree = "<group>"; };
 		B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		B1FD3B9823A588DE00677A52 /* defaultSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultSettings.json; sourceTree = "<group>"; };
-		E380F2462331806400640547 /* Vimarily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vimarily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E380F2492331806400640547 /* Vimarily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vimarily.entitlements; sourceTree = "<group>"; };
+		E380F2462331806400640547 /* Vimarily Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vimarily Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E380F2522331806500640547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E380F2542331806500640547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E380F2592331806500640547 /* Vimarily Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vimarily Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E380F2592331806500640547 /* Vimarily Extension Debug.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vimarily Extension Debug.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E380F25E2331806500640547 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E380F2612331806500640547 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		E380F2632331806500640547 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
 		E380F2662331806500640547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		E380F2682331806500640547 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E380F26B2331806500640547 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
-		E380F26D2331806500640547 /* Vimarily_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vimarily_Extension.entitlements; sourceTree = "<group>"; };
 		E380F278233183EE00640547 /* link-hints.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "link-hints.js"; sourceTree = "<group>"; };
 		E380F27A233183EE00640547 /* injected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = injected.js; sourceTree = "<group>"; };
 		E380F27B233183EE00640547 /* mocks.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mocks.js; sourceTree = "<group>"; };
@@ -200,8 +202,8 @@
 		E380F2472331806400640547 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E380F2462331806400640547 /* Vimarily.app */,
-				E380F2592331806500640547 /* Vimarily Extension.appex */,
+				E380F2462331806400640547 /* Vimarily Debug.app */,
+				E380F2592331806500640547 /* Vimarily Extension Debug.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,7 +211,7 @@
 		E380F2482331806400640547 /* Vimarily */ = {
 			isa = PBXGroup;
 			children = (
-				E380F2492331806400640547 /* Vimarily.entitlements */,
+				498734DE28EB2303001602B9 /* VimarilyDebug.entitlements */,
 				E380F2522331806500640547 /* Assets.xcassets */,
 				E380F2542331806500640547 /* Info.plist */,
 				490CA56B28C4DAE700CDEE6B /* Vimarily.swift */,
@@ -232,6 +234,7 @@
 		E380F2602331806500640547 /* Vimarily Extension */ = {
 			isa = PBXGroup;
 			children = (
+				498734DF28EB24A1001602B9 /* VimarilyExtensionRelease.entitlements */,
 				E380F2612331806500640547 /* SafariExtensionHandler.swift */,
 				B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */,
 				E380F2632331806500640547 /* SafariExtensionViewController.swift */,
@@ -241,7 +244,7 @@
 				E380F277233183EE00640547 /* js */,
 				E380F2682331806500640547 /* Info.plist */,
 				E380F26B2331806500640547 /* ToolbarItemIcon.pdf */,
-				E380F26D2331806500640547 /* Vimarily_Extension.entitlements */,
+				3306CD34A53468F058B434BC /* VimarilyExtensionDebug.entitlements */,
 			);
 			path = "Vimarily Extension";
 			sourceTree = "<group>";
@@ -296,7 +299,7 @@
 			);
 			name = Vimarily;
 			productName = Vimarily;
-			productReference = E380F2462331806400640547 /* Vimarily.app */;
+			productReference = E380F2462331806400640547 /* Vimarily Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E380F2582331806500640547 /* Vimarily Extension */ = {
@@ -313,7 +316,7 @@
 			);
 			name = "Vimarily Extension";
 			productName = "Vimarily Extension";
-			productReference = E380F2592331806500640547 /* Vimarily Extension.appex */;
+			productReference = E380F2592331806500640547 /* Vimarily Extension Debug.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -362,6 +365,7 @@
 				E380F2532331806500640547 /* Assets.xcassets in Resources */,
 				3306CCFA6DEFA4C8EBCFFB96 /* Credits.rtf in Resources */,
 				3306C09E92DD22F68026060A /* .swiftlint.yml in Resources */,
+				3306CCF1F01B4F5FCCE90243 /* VimarilyExtensionDebug.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +501,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
+				PARENT_APP_BUNDLE_IDENTIFIER = com.marcdonald.VimarilyDebug;
 				PRODUCT_BUNDLE_IDENTIFIER = VimarilyDebug;
 				PRODUCT_NAME = "Vimarily Debug";
 				SDKROOT = macosx;
@@ -559,6 +564,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "";
+				PARENT_APP_BUNDLE_IDENTIFIER = com.marcdonald.Vimarily;
 				PRODUCT_BUNDLE_IDENTIFIER = Vimarily;
 				PRODUCT_NAME = Vimarily;
 				SDKROOT = macosx;
@@ -572,7 +578,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Vimarily Extension/Vimarily_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Vimarily Extension/VimarilyExtensionDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -598,7 +604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Vimarily Extension/Vimarily_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Vimarily Extension/VimarilyExtensionRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -625,7 +631,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Vimarily/Vimarily.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Vimarily/VimarilyDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -682,7 +688,7 @@
 				E380F26F2331806500640547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E380F2702331806500640547 /* Build configuration list for PBXNativeTarget "Vimarily Extension" */ = {
 			isa = XCConfigurationList;
@@ -691,7 +697,7 @@
 				E380F2722331806500640547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E380F2742331806500640547 /* Build configuration list for PBXNativeTarget "Vimarily" */ = {
 			isa = XCConfigurationList;
@@ -700,7 +706,7 @@
 				E380F2762331806500640547 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

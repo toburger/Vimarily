@@ -18,11 +18,7 @@ enum TabDirection: String {
 }
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
-
-	private enum Constant {
-		static let mainAppName = "Vimarily"
-		static let newTabPageURL = "https://google.com"
-	}
+	static let DEFAULTS_INSTANCE: UserDefaults = UserDefaults(suiteName: UserDefaults.sharedAppGroup)!
 
 	let configuration: ConfigurationModelProtocol = ConfigurationModel()
 
@@ -40,7 +36,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 		} catch {
 			NSLog("Message Received " + error.localizedDescription)
 		}
-
 	}
 
 	// This method handles messages from the extension (in the browser page)
@@ -69,7 +64,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	override func toolbarItemClicked(in _: SFSafariWindow) {
 		// This method will be called when your toolbar item is clicked.
 		NSLog("The extension's toolbar item was clicked")
-		NSWorkspace.shared.launchApplication(Constant.mainAppName)
+		NSLog("Test: " + (SafariExtensionHandler.DEFAULTS_INSTANCE.string(forKey: .generalKey(.openTabUrl)) ?? "nothing"))
+//		NSWorkspace.shared.launchApplication(Constant.mainAppName)
 	}
 
 	override func validateToolbarItem(

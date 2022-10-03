@@ -1,8 +1,10 @@
 import Foundation
 
-fileprivate let defaults: UserDefaults = UserDefaults.standard
 
 extension UserDefaults {
+	static let sharedAppGroup = "group." + (Bundle.main.object(forInfoDictionaryKey: "ParentAppBundleIdentifier") as? String ?? "")
+	static let INSTANCE = UserDefaults(suiteName: UserDefaults.sharedAppGroup)!
+
 	enum GeneralKeys: String, CaseIterable {
 		case firstRunGone = "firstRunGone"
 		case excludedUrls = "excludedUrls"
@@ -51,12 +53,6 @@ extension UserDefaults {
 			case .bindingKey(let bindingKey):
 				return bindingKey.rawValue
 			}
-		}
-	}
-
-	static var INSTANCE: UserDefaults {
-		get {
-			defaults
 		}
 	}
 

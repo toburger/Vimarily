@@ -10,11 +10,13 @@
 		3306C09E92DD22F68026060A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3306C459455B920553332640 /* .swiftlint.yml */; };
 		3306C0FACC0EA21459A89F74 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */; };
 		3306C160AAEF10C3BFA4E001 /* ReloadReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */; };
+		3306C3E6A996B0B9BD7F80CC /* mocks.js in Sources */ = {isa = PBXBuildFile; fileRef = 3306C601BEE6F110578E3AF0 /* mocks.js */; };
 		3306C4420B6EEF86538E3C51 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */; };
 		3306C6815F6B63463ED59505 /* KeyBindingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C746646546C49F6BD7BF /* KeyBindingsViewModel.swift */; };
 		3306C6852F586F2B32687159 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CBEA276E256F4A1922B9 /* SettingsViewModel.swift */; };
 		3306C802F2BFE301BDC3A495 /* ErrorText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306CBA39B7B2560138E3487 /* ErrorText.swift */; };
 		3306C93CC71A8B923B81BC0D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C652F86CFAB0D3B39D5D /* SettingsView.swift */; };
+		3306C9CB36E11EF48B4D7B49 /* vimarily.spec.js in Sources */ = {isa = PBXBuildFile; fileRef = 3306C2C9ECE7975AF09154BA /* vimarily.spec.js */; };
 		3306CAA21AF06A71019E12CE /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0A2D14E792D9C8AAE35 /* GeneralView.swift */; };
 		3306CB9E53C5C3FD73456BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C4D7D7B218764A4434CE /* Constants.swift */; };
 		3306CC038BD2BBBE3B9CA6F9 /* KeyBindingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3306C0785AAD427FAE9BC718 /* KeyBindingsView.swift */; };
@@ -34,7 +36,6 @@
 		E380F26C2331806500640547 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E380F26B2331806500640547 /* ToolbarItemIcon.pdf */; };
 		E380F283233183EF00640547 /* link-hints.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F278233183EE00640547 /* link-hints.js */; };
 		E380F285233183EF00640547 /* injected.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F27A233183EE00640547 /* injected.js */; };
-		E380F286233183EF00640547 /* mocks.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F27B233183EE00640547 /* mocks.js */; };
 		E380F287233183EF00640547 /* keyboard-utils.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F27C233183EE00640547 /* keyboard-utils.js */; };
 		E380F288233183EF00640547 /* mousetrap.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F27E233183EE00640547 /* mousetrap.js */; };
 		E380F289233183EF00640547 /* vimium-scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = E380F27F233183EE00640547 /* vimium-scripts.js */; };
@@ -70,8 +71,10 @@
 		3306C0A2D14E792D9C8AAE35 /* GeneralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		3306C19BF2DAD7AFF62D204F /* ReloadReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadReminder.swift; sourceTree = "<group>"; };
 		3306C2213248BF1931B37CF8 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		3306C2C9ECE7975AF09154BA /* vimarily.spec.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = vimarily.spec.js; sourceTree = "<group>"; };
 		3306C459455B920553332640 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		3306C4D7D7B218764A4434CE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3306C601BEE6F110578E3AF0 /* mocks.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mocks.js; sourceTree = "<group>"; };
 		3306C652F86CFAB0D3B39D5D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3306C746646546C49F6BD7BF /* KeyBindingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyBindingsViewModel.swift; sourceTree = "<group>"; };
 		3306C8B1951F6AA5DDB09D55 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -97,7 +100,6 @@
 		E380F26B2331806500640547 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		E380F278233183EE00640547 /* link-hints.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "link-hints.js"; sourceTree = "<group>"; };
 		E380F27A233183EE00640547 /* injected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = injected.js; sourceTree = "<group>"; };
-		E380F27B233183EE00640547 /* mocks.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mocks.js; sourceTree = "<group>"; };
 		E380F27C233183EE00640547 /* keyboard-utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "keyboard-utils.js"; sourceTree = "<group>"; };
 		E380F27E233183EE00640547 /* mousetrap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mousetrap.js; sourceTree = "<group>"; };
 		E380F27F233183EE00640547 /* vimium-scripts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "vimium-scripts.js"; sourceTree = "<group>"; };
@@ -178,6 +180,15 @@
 			path = KeyBindingsView;
 			sourceTree = "<group>";
 		};
+		3306CBE771CF8882E17B4DEA /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				3306C2C9ECE7975AF09154BA /* vimarily.spec.js */,
+				3306C601BEE6F110578E3AF0 /* mocks.js */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
 		E380F23D2331806300640547 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +197,7 @@
 				E380F25D2331806500640547 /* Frameworks */,
 				E380F2472331806400640547 /* Products */,
 				3306C459455B920553332640 /* .swiftlint.yml */,
+				3306CBE771CF8882E17B4DEA /* tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,7 +255,6 @@
 			children = (
 				E380F278233183EE00640547 /* link-hints.js */,
 				E380F27A233183EE00640547 /* injected.js */,
-				E380F27B233183EE00640547 /* mocks.js */,
 				E380F27C233183EE00640547 /* keyboard-utils.js */,
 				E380F27D233183EE00640547 /* lib */,
 				65E444F224CC3A1B008EA1DC /* SafariExtensionCommunicator.js */,
@@ -370,7 +381,6 @@
 				E380F287233183EF00640547 /* keyboard-utils.js in Resources */,
 				E380F289233183EF00640547 /* vimium-scripts.js in Resources */,
 				E380F2672331806500640547 /* SafariExtensionViewController.xib in Resources */,
-				E380F286233183EF00640547 /* mocks.js in Resources */,
 				E380F283233183EF00640547 /* link-hints.js in Resources */,
 				E380F288233183EF00640547 /* mousetrap.js in Resources */,
 			);
@@ -405,6 +415,8 @@
 				E380F2622331806500640547 /* SafariExtensionHandler.swift in Sources */,
 				B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */,
 				3306C4420B6EEF86538E3C51 /* UserDefaults.swift in Sources */,
+				3306C9CB36E11EF48B4D7B49 /* vimarily.spec.js in Sources */,
+				3306C3E6A996B0B9BD7F80CC /* mocks.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 module.exports = {
+	testEnvironment: 'jest-environment-jsdom',
 	setupFiles: [
-		'./Vimarily Extension/js/mocks.js',
-		'./Vimarily Extension/json/defaultSettings.json',
+		'./tests/mocks.js',
 		'./Vimarily Extension/js/lib/mousetrap.js',
 		'./Vimarily Extension/js/injected.js',
 	],

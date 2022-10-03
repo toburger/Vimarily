@@ -1,4 +1,5 @@
-const SafariExtensionCommunicator = function (msgHandler) {
+// noinspection ES6ConvertLetToConst
+let SafariExtensionCommunicator = function (msgHandler) {
 	'use strict';
 	const publicAPI = {};
 

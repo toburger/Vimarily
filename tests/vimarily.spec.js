@@ -5,8 +5,7 @@ describe('isExcludedUrl', () => {
 
 	it('returns true on same exact domain', () => {
 		const excludedUrl = 'specific-domain.com';
-		const currentUrl = excludedUrl;
-		expect(isExcludedUrl(excludedUrl, currentUrl)).to.be.ok();
+		expect(isExcludedUrl(excludedUrl, 'specific-domain.com')).to.be.ok();
 	});
 
 	it('returns true on duplicate domains', () => {

@@ -8,7 +8,11 @@ let animationFrame = null;
 
 function customScrollBy(x, y) {
 	// If smooth scroll is off then use regular scroll
-	if (settings == undefined || settings.smoothScroll === undefined || !settings.smoothScroll) {
+	if (
+		settings == undefined ||
+		settings.smoothScroll === undefined ||
+		!settings.smoothScroll
+	) {
 		window.scrollBy(x, y);
 		return;
 	}
@@ -20,12 +24,14 @@ function customScrollBy(x, y) {
 
 	// Ease function
 	function easeOutExpo(t, b, c, d) {
-		return c * (-Math.pow(2, -10 * t / d) + 1) + b;
+		return c * (-Math.pow(2, (-10 * t) / d) + 1) + b;
 	}
 
 	// Animate the scroll
 	function animLoop() {
-		const toScroll = Math.round(easeOutExpo(i, 0, y, settings.scrollDuration) - delta);
+		const toScroll = Math.round(
+			easeOutExpo(i, 0, y, settings.scrollDuration) - delta
+		);
 		if (toScroll !== 0) {
 			if (y) {
 				window.scrollBy(0, toScroll);
@@ -34,11 +40,11 @@ function customScrollBy(x, y) {
 			}
 		}
 
-		if (i < this.settings.scrollDuration) {
+		if (i < settings.scrollDuration) {
 			animationFrame = window.requestAnimationFrame(animLoop);
 		}
 
-		delta = easeOutExpo(i, 0, (x || y), settings.scrollDuration);
+		delta = easeOutExpo(i, 0, x || y, settings.scrollDuration);
 		i += 1;
 	}
 

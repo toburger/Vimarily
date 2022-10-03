@@ -20,32 +20,21 @@ Chrome extension that provides much more extensive features.
 
 As of now there are no stable releases of Vimarily.
 
-[//]: # (## Installation)
-
-[//]: # ()
-[//]: # (### Safari 12 and above &#40;macOS Mojave or above&#41;)
-
-[//]: # ()
-[//]: # (#### Prebuilt binaries)
-
-[//]: # ()
-[//]: # (1. Download the [latest version]&#40;https://github.com/marcdonald/vimarily/releases/latest&#41; of Vimarily)
-
-[//]: # (2. Unzip it)
-
-[//]: # (3. Move it to your `/Applications` folder)
-
-[//]: # (4. Launch Vimarily.app)
-
+[//]: # '## Installation'
+[//]: #
+[//]: # '### Safari 12 and above (macOS Mojave or above)'
+[//]: #
+[//]: # '#### Prebuilt binaries'
+[//]: #
+[//]: # '1. Download the [latest version](https://github.com/marcdonald/vimarily/releases/latest) of Vimarily'
+[//]: # '2. Unzip it'
+[//]: # '3. Move it to your `/Applications` folder'
+[//]: # '4. Launch Vimarily.app'
 [//]: # (5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open)
-
-[//]: # (6. Make sure that the checkbox for the Vimarily extension is ticked)
-
-[//]: # (7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is)
-
-[//]: # (	 ready.)
-
-[//]: # (8. You may need to relaunch Safari for the extension to work)
+[//]: # '6. Make sure that the checkbox for the Vimarily extension is ticked'
+[//]: # '7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is'
+[//]: # '	 ready.'
+[//]: # '8. You may need to relaunch Safari for the extension to work'
 
 ## Usage
 
@@ -87,12 +76,12 @@ Vimarily is built as a Safari Extension, this poses some limits on what is possi
 default Safari shortcuts can help you keep your hands at the keyboard. Some helpful ones are listed here:
 
 - **Focus URL Bar** <kbd>⌘</kbd><kbd>l</kbd> - This is a feature not available in Vimarily, it is also helpful where
-	extensions are not loaded (for example on `topsites://`). By focusing the URL Bar you can go to a website where the
-	extension is loaded.
+  extensions are not loaded (for example on `topsites://`). By focusing the URL Bar you can go to a website where the
+  extension is loaded.
 
 - **Reader mode** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>R</kbd> - Currently Vimarily does not support entering Reader mode (due
-	to API limitations), also navigation inside reader mode (for example using <kbd>j</kbd> or <kbd>k</kbd>) is not
-	supported.
+  to API limitations), also navigation inside reader mode (for example using <kbd>j</kbd> or <kbd>k</kbd>) is not
+  supported.
 
 - **Re-open last closed tab** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>T</kbd> - Allows you to reopen a recently closed tab.
 

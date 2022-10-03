@@ -149,33 +149,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
 	// MARK: Settings
 
-	private func getSetting(_ settingKey: String) -> Any? {
-		do {
-			let settings = try configuration.getUserSettings()
-			return settings[settingKey]
-		} catch {
-			NSLog("Was not able to retrieve the user settings\n\(error.localizedDescription)")
-			return nil
-		}
-	}
-
 	private func updateSettings(page: SFSafariPage) {
 		do {
-			let settings: [String: Any]
-			if let userSettings = try? configuration.getUserSettings() {
-				settings = userSettings
-			} else {
-				settings = try configuration.getDefaultSettings()
+			let settings: [String: Any] = try configuration.getUserSettings()
+			// TODO temp
+			settings.forEach { key, value in
+				NSLog("Binding: " + key + ": " + (value as? [String] ?? ["Nothing"])[0])
 			}
-			page.dispatch(settings: settings)
-		} catch {
-			NSLog(error.localizedDescription)
-		}
-	}
-
-	private func fallbackSettings(page: SFSafariPage) {
-		do {
-			let settings = try configuration.getUserSettings()
 			page.dispatch(settings: settings)
 		} catch {
 			NSLog(error.localizedDescription)

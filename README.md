@@ -16,25 +16,21 @@ Chrome extension that provides much more extensive features.
 
 <img src="assets/screenshot.png"></img>
 
-## Releases
+## Installation
 
-As of now there are no stable releases of Vimarily.
+### Safari 12 and above (macOS Mojave or above)
 
-[//]: # '## Installation'
-[//]: #
-[//]: # '### Safari 12 and above (macOS Mojave or above)'
-[//]: #
-[//]: # '#### Prebuilt binaries'
-[//]: #
-[//]: # '1. Download the [latest version](https://github.com/marcdonald/vimarily/releases/latest) of Vimarily'
-[//]: # '2. Unzip it'
-[//]: # '3. Move it to your `/Applications` folder'
-[//]: # '4. Launch Vimarily.app'
-[//]: # (5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open)
-[//]: # '6. Make sure that the checkbox for the Vimarily extension is ticked'
-[//]: # '7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is'
-[//]: # '	 ready.'
-[//]: # '8. You may need to relaunch Safari for the extension to work'
+#### Prebuilt binaries
+
+1. Download the [latest version](https://github.com/marcdonald/Vimarily/releases/latest) of Vimarily
+2. Unzip it
+3. Move it to your `/Applications` folder
+4. Launch Vimarily.app
+5. Click "Open in Safari Extensions Preferences...", Safari's Extension Preferences should open
+6. Make sure that the checkbox for the Vimarily extension is ticked
+7. Go back to Vimarily.app and press the reload button to check the status of the app. If it says "Enabled" then it is
+   ready.
+8. You may need to relaunch Safari for the extension to work
 
 ## Usage
 
@@ -66,10 +62,6 @@ be your style, instead the transparent bindings setting (when enabled)
 allows you to use all **non-Vimarily-bound** keys to interact with the web
 page as if you were in insert mode.
 
-**Multiple Bindings** - You can bind multiple keybindings to a Vimarily
-action. This is done by specifying an array of bindings in the
-configuration file, like so: `"goToPageTop": ["g g", "shift+k"]`.
-
 ### Tips & Tricks
 
 Vimarily is built as a Safari Extension, this poses some limits on what is possible through the extension. However
@@ -85,7 +77,7 @@ default Safari shortcuts can help you keep your hands at the keyboard. Some help
 
 - **Re-open last closed tab** <kbd>⇧</kbd><kbd>⌘</kbd><kbd>T</kbd> - Allows you to reopen a recently closed tab.
 
-## License
+## Licenses
 
 ### Vimarily
 

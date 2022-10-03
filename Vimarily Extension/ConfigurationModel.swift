@@ -7,7 +7,6 @@ import SafariServices
 
 class ConfigurationModel: ConfigurationModelProtocol {
 	func getUserSettings() throws -> [String: Any] {
-		// TODO
 		var result: [String: Any] = [:]
 		var actionBindings: [String: [String]] = [:]
 

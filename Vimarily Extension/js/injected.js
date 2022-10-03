@@ -203,7 +203,6 @@ Mousetrap.prototype.stopCallback = function (e, element, combo) {
 
 // Set up key codes to event handlers
 function bindKeyCodesToActions() {
-	// TODO need to update to support StringArray
 	// Only add if topWindow... not iframe
 	Mousetrap.reset();
 	if (topWindow) {
@@ -336,7 +335,6 @@ function getKeyCode(actionName) {
 	};
 
 	if (Array.isArray(keyCode)) {
-		// TODO something here
 		return keyCode.map(addModifier);
 	} else {
 		return addModifier(keyCode);
@@ -392,9 +390,7 @@ function setSettings(msg) {
 function activateExtension(settings) {
 	if (
 		typeof settings != 'undefined' &&
-		// TODO
-		// isExcludedUrl(settings.excludedUrls, document.URL)) {
-		isExcludedUrl([], document.URL)
+		isExcludedUrl(settings.excludedUrls, document.URL)
 	) {
 		return;
 	}
@@ -414,7 +410,13 @@ function isExcludedUrl(storedExcludedUrls, currentUrl) {
 	}
 
 	let excludedUrls, regexp, url, formattedUrl, _i, _len;
-	excludedUrls = storedExcludedUrls.split(',');
+	// TODO temporarily only the first index until comma separated string is replaced with array
+	if (storedExcludedUrls[0]) {
+		excludedUrls = storedExcludedUrls[0].split(',');
+	} else {
+		excludedUrls = '';
+	}
+
 	for (_i = 0, _len = excludedUrls.length; _i < _len; _i++) {
 		url = excludedUrls[_i];
 		formattedUrl = stripProtocolAndWww(url);

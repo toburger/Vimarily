@@ -152,10 +152,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	private func updateSettings(page: SFSafariPage) {
 		do {
 			let settings: [String: Any] = try configuration.getUserSettings()
-			// TODO temp
-			settings.forEach { key, value in
-				NSLog("Binding: " + key + ": " + (value as? [String] ?? ["Nothing"])[0])
-			}
 			page.dispatch(settings: settings)
 		} catch {
 			NSLog(error.localizedDescription)

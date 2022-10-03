@@ -10,7 +10,7 @@
 		"lint:fix": "eslint --fix .",
 		"format": "prettier --check .",
 		"format:fix": "prettier --write .",
-		"test": "jest ./tests"
+		"test": "jest Vimarily Extension/js/tests"
 	},
 	"devDependencies": {
 		"eslint": "8.24.0",

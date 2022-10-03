@@ -64,8 +64,11 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 	override func toolbarItemClicked(in _: SFSafariWindow) {
 		// This method will be called when your toolbar item is clicked.
 		NSLog("The extension's toolbar item was clicked")
-		NSLog("Test: " + (SafariExtensionHandler.DEFAULTS_INSTANCE.string(forKey: .generalKey(.openTabUrl)) ?? "nothing"))
-//		NSWorkspace.shared.launchApplication(Constant.mainAppName)
+		#if DEBUG
+		NSWorkspace.shared.launchApplication("Vimarily Debug")
+		#else
+		NSWorkspace.shared.launchApplication("Vimarily")
+		#endif
 	}
 
 	override func validateToolbarItem(

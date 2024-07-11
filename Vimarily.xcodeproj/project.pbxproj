@@ -613,7 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = SCQW3J7B4U;
+				DEVELOPMENT_TEAM = BM546G29G6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Vimarily Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,7 +622,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = "$(VERSION)-debug";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcdonald.VimarilyDebug.SafariExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toburger.VimarilyDebug.SafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -639,7 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = SCQW3J7B4U;
+				DEVELOPMENT_TEAM = BM546G29G6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Vimarily Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -648,7 +648,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = "$(VERSION)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcdonald.Vimarily.SafariExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toburger.Vimarily.SafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -666,7 +666,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = SCQW3J7B4U;
+				DEVELOPMENT_TEAM = BM546G29G6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Vimarily/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Vimarily;
@@ -676,7 +676,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = "$(VERSION)-debug";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcdonald.VimarilyDebug;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toburger.VimarilyDebug;
 				PRODUCT_NAME = "$(TARGET_NAME) Debug";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -694,7 +694,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = SCQW3J7B4U;
+				DEVELOPMENT_TEAM = BM546G29G6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Vimarily/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Vimarily;
@@ -704,7 +704,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = "$(VERSION)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.marcdonald.Vimarily;
+				PRODUCT_BUNDLE_IDENTIFIER = com.toburger.Vimarily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
